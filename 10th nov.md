@@ -44,3 +44,18 @@ int main()
 ```
 ![image](https://user-images.githubusercontent.com/93079062/201001434-bf774f11-6e4a-41af-b45e-229d474eabd1.png)
 ```
+//sum of 1!/1+2!/2+3!/3+...+n!/n
+#include<stdio.h>
+int main()
+{
+int i,n,fact=1;
+float sum=0.0;
+printf("Enter Value of n:");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+fact=fact*i;
+sum=sum+(fact/i);
+}
+printf("The value of series is %f",sum);
+}
